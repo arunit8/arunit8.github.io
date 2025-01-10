@@ -1,79 +1,82 @@
+/* General Styles */
 body {
-      font-family: Arial, sans-serif;
-        margin: 0;
-          padding: 0;
-            box-sizing: border-box;
-            }
-
-            header {
-              background-color: #4CAF50;
-                color: white;
-                  padding: 20px;
-                    text-align: center;
+  font-family: Arial, sans-serif;
+    margin: 0;
+      padding: 0;
+        line-height: 1.6;
+          color: #333;
+          }
+          .container {
+            width: 90%;
+              max-width: 1200px;
+                margin: auto;
+                }
+                a {
+                  color: #007BFF;
+                    text-decoration: none;
                     }
 
-                    nav ul {
-                      list-style-type: none;
-                        padding: 0;
-                          background-color: #333;
-                            overflow: hidden;
-                              margin: 0;
-                              }
-
-                              nav ul li {
-                                float: left;
+                    /* Header */
+                    .main-header {
+                      background: #222;
+                        color: #fff;
+                          padding: 1rem 0;
+                          }
+                          .main-header .navbar ul {
+                            display: flex;
+                              list-style: none;
+                                justify-content: center;
                                 }
+                                .main-header .navbar ul li {
+                                  margin: 0 1rem;
+                                  }
+                                  .main-header .navbar ul li a {
+                                    color: #fff;
+                                      font-weight: bold;
+                                      }
 
-                                nav ul li a {
-                                  display: block;
-                                    color: white;
-                                      text-align: center;
-                                        padding: 14px 16px;
-                                          text-decoration: none;
-                                          }
-
-                                          nav ul li a:hover {
-                                            background-color: #111;
-                                            }
-
-                                            section {
-                                              padding: 20px;
+                                      /* Hero Section */
+                                      .hero {
+                                        background: #007BFF;
+                                          color: #fff;
+                                            padding: 3rem 0;
+                                              text-align: center;
                                               }
+                                              .hero .cta-button {
+                                                background: #fff;
+                                                  color: #007BFF;
+                                                    padding: 0.5rem 1rem;
+                                                      text-transform: uppercase;
+                                                        font-weight: bold;
+                                                          border: none;
+                                                            cursor: pointer;
+                                                            }
 
-                                              .service {
-                                                border: 1px solid #ddd;
-                                                  padding: 10px;
-                                                    margin: 10px 0;
-                                                    }
-
-                                                    footer {
-                                                      background-color: #333;
-                                                        color: white;
-                                                          text-align: center;
-                                                            padding: 10px;
-                                                              position: fixed;
-                                                                width: 100%;
-                                                                  bottom: 0;
+                                                            /* Services */
+                                                            .services {
+                                                              padding: 2rem 0;
+                                                                background: #f4f4f4;
+                                                                  text-align: center;
                                                                   }
-
-                                                                  form {
+                                                                  .service-cards {
                                                                     display: flex;
-                                                                      flex-direction: column;
-                                                                      }
+                                                                      justify-content: center;
+                                                                        gap: 1rem;
+                                                                          flex-wrap: wrap;
+                                                                          }
+                                                                          .card {
+                                                                            background: #fff;
+                                                                              padding: 1rem;
+                                                                                border: 1px solid #ddd;
+                                                                                  width: 30%;
+                                                                                    min-width: 250px;
+                                                                                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                                                                      }
 
-                                                                      form label, form input, form textarea {
-                                                                        margin-bottom: 10px;
-                                                                        }
-
-                                                                        form button {
-                                                                          background-color: #4CAF50;
-                                                                            color: white;
-                                                                              border: none;
-                                                                                padding: 10px;
-                                                                                  cursor: pointer;
-                                                                                  }
-
-                                                                                  form button:hover {
-                                                                                    background-color: #45a049;
-                                                                                    }
-}
+                                                                                      /* Footer */
+                                                                                      .footer {
+                                                                                        background: #222;
+                                                                                          color: #fff;
+                                                                                            text-align: center;
+                                                                                              padding: 1rem 0;
+                                                                                              }
